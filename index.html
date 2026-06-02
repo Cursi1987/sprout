@@ -1674,7 +1674,7 @@ if(CFG.dir)document.getElementById('cfg-dir').value=CFG.dir;
   }
 })();
 // Re-chequear si cambia orientación
-window.addEventListener('resize',function(){forceMobileLayout();});
+window.addEventListener('resize',function(){if(document.activeElement&&document.activeElement.tagName==="INPUT")return;forceMobileLayout();});
 </script>
 </body>
 </html>
