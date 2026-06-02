@@ -482,7 +482,7 @@ tr:hover td{background:var(--pl)}
 
         <div class="ct-r tot"><span>Total</span><span id="c-tot">$0.00</span></div>
       </div>
-      <input type="number" id="desc-mxn" class="desc-inp" placeholder="Descuento en pesos $" min="0" oninput="renderCart()">
+      <input type="number" id="desc-mxn" class="desc-inp" placeholder="Descuento en pesos $" min="0" onchange="renderCart()" onblur="renderCart()" inputmode="decimal">
       <div id="cart-resumen" style="display:none;background:var(--sur2);border:1px solid var(--bdr);border-radius:var(--r2);padding:7px 10px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
         <div style="display:flex;gap:12px">
           <div style="text-align:center">
